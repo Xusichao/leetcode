@@ -2,8 +2,8 @@ import PublicClass.ListNode;
 
 public class Main {
     public static void main(String[] args) {
-        Examination21 examination21 = new Examination21();
-
-        System.out.print(examination21.mergeTwoLists(new ListNode(1)));
+        Examination344 examination = new Examination344();
+        char[] s = {'A','B','C','d'};
+        examination.reverseString(s);
     }
 }
