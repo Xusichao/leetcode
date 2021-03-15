@@ -17,10 +17,10 @@ public class Examination118 {
                 List<Integer> last = out.get(i-1);
                 for (int n=0;n<last.size()+1;n++){
                     int item;
-                    if (n >= last.size()+1){
-                        item = last.get(n) + 0;
+                    if (n == 0 || n == last.size()+1-1){
+                        item = 0 + last.get(n);
                     }else {
-                        item = last.get(n) + last.get(n+1);
+                        item = last.get(n-1) + last.get(n);
                     }
                     row.add(item);
                 }
@@ -29,4 +29,5 @@ public class Examination118 {
         }
         return out;
     }
+
 }
